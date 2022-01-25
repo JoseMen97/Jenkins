@@ -6,7 +6,7 @@ pipeline {
  
             stage ('test') {
                 steps {
-                  dir("build_java/src/test/java/com/aws/codestar/projecttemplates/controller/"){
+                  dir("build_java/src/test/java/com/aws/codestar/projecttemplates/controller"){
                         sh "mvn clean compile test"
                   }
                    
